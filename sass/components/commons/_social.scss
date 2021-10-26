@@ -1,0 +1,36 @@
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+.social__link {
+    display: block;
+    color: #AFB1B8; 
+    border-radius: 100%;    
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+
+    transition: 
+    color $timer-animation-duration $timer-cubic-function, 
+    background-color $timer-animation-duration $timer-cubic-function;
+
+    &:hover, &:focus {
+        background-color: $accent-blue-color;   
+        color: $accent-white-color;
+    }
+}
+
+.social__icon {
+    fill: currentColor;
+}
+
+.social__link--background {
+    background: rgba(255, 255, 255, 0.1);
+    color: $accent-white-color;
+}

@@ -1,0 +1,19 @@
+.button-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    cursor: pointer;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);  
+
+    &:hover .button-close__icon, &:focus .button-close__icon {
+        fill: $accent-blue-color;    
+    }
+
+}
+

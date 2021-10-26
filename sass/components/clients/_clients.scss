@@ -1,0 +1,36 @@
+.clients {
+    display: flex;
+}
+
+.clients__item {
+    flex-basis:calc((100% - 150px) / 6);
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+
+
+.clients__link {
+    display: block;
+    padding: 13px 30px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    transition: 
+    color $timer-animation-duration $timer-cubic-function, 
+    border $timer-animation-duration $timer-cubic-function;
+
+    &:hover, &:focus {
+        border: 1px solid $accent-blue-color;
+    }
+}
+
+.clients__icon {
+    fill: #AFB1B8;
+
+    .clients__link:hover & {
+        fill: $accent-blue-color;
+    }
+}

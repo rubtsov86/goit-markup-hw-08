@@ -1,0 +1,41 @@
+/*   нормалайз + переменные + утилиты + общие стили боди  */
+@import 'base/modern-normalize';
+@import 'utils/variables';
+@import 'utils/utils';
+
+/*   общие стили  */
+@import 'components/commons/body';
+@import 'components/commons/section';
+@import 'components/commons/container';
+
+/*   header  */
+@import 'components/header/page-header';
+@import 'components/commons/logo';
+@import 'components/header/site-nav';
+@import 'components/header/contact';
+
+/*   footer  */
+@import 'components/footer/footer';
+@import 'components/footer/adress';
+@import 'components/footer/footer-social';
+@import 'components/footer/footer-form';
+
+
+/*   index - main  */
+@import 'components/hero/hero';
+@import 'components/commons/button';
+@import 'components/features/features';
+@import 'components/works-list/works';
+@import 'components/team/team';
+@import 'components/commons/social';
+@import 'components/clients/clients';
+
+/*   index - modal  */
+@import 'components/modal/modal';
+@import 'components/modal/form-recall';
+@import 'components/modal/checkbox';
+@import 'components/modal/button-close';
+
+/*   portfolio  */
+@import 'components/portfolio/portfolio';
+@import 'components/portfolio/grid';

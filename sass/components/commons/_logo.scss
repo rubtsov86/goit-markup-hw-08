@@ -1,0 +1,15 @@
+.logo {
+    color: currentColor;   
+    font-family: raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.logo__text--accent {
+    color: $accent-blue-color;
+}
+
+.logo--inverse {
+    color: $accent-white-color;
+}
