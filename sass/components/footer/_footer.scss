@@ -4,3 +4,32 @@
     
     background-color: #2F303A;
 }
+
+.page-footer__wrapper {
+
+@media screen and (min-width: 768px) {
+display: flex;
+justify-content: space-between;
+}
+@media screen and (min-width: 1200px) {
+    display: flex;
+}
+
+
+}
+
+.page-footer__container {
+
+    @media screen and (max-width: 1199px) {    
+    text-align: center;
+    }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) { 
+    padding-left: 76px;
+    padding-right: 89px;
+}  
+
+@media screen and (min-width: 1200px) {
+    display: flex;
+}
+}

@@ -1,8 +1,19 @@
 .form-subscribe__wrapper {
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 60px;
+
+}
+
+
+@media screen and (min-width: 1200px) {
     display: flex;
     align-items: flex-end;
     
     align-self:  flex-start;
+
+}
+
     margin-left: auto;
     padding-top: 12px;
 }
@@ -10,7 +21,10 @@
 .form-subscribe {
     display: flex;
     flex-direction: column;
+
+@media screen and (min-width: 1200px) {
     margin-right: 12px;
+}
 }
 
 .form-subscribe__label {
@@ -21,10 +35,28 @@
     font-size: 14px;
     line-height: 1.17;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
 }
 
 .form-subscribe__input {
+    max-width: 450px;
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 20px;
+}
+
+    @media screen and (min-width: 768px) {
     width: 358px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+margin-left: auto;
+margin-right: auto;
+}
+
     padding: 14px;
     font-size: 16px;
     line-height: 1.25;

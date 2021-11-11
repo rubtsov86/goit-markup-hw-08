@@ -1,31 +1,80 @@
 .hero {
-    height: 600px;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+  max-height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+
+  background-color: #2f303a;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 767px) {
+    padding: 118px 60px;
+    max-width: 480px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/main/hero-mobile@1x.jpg');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/main/hero-mobile@2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    width: 768px;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/main/hero-tablet@1x.jpg');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/main/hero-tablet@2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
-    text-align: center;
-    
-    background-color: #2F303A;
-    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url('../images/main/hero.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/main/hero-desktop@1x.jpg');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/main/hero-desktop@2x.jpg');
+    }
+  }
 }
 
 .hero__title {
-    margin-top: 0;
-    margin-bottom: 40px;
-    width: 696px;
+  margin-top: 0;
+  color: $accent-white-color;
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 360px;
     margin-left: auto;
     margin-right: auto;
-    
-    color: $accent-white-color;
+  }
 
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    margin-bottom: 40px;
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 0.06em;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-align: center;
+  }
 }

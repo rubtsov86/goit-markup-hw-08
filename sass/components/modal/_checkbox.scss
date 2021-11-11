@@ -1,15 +1,22 @@
 .checkbox {
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 
+    @media screen and (min-width: 1200px) {    
     padding-left: 10px;
     padding-right: 10px;
-    margin-bottom: 30px;
+    }    
 }
 
 .checkbox__label {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
     font-size: 14px;
     line-height: 1.71;
     cursor: pointer;
@@ -37,8 +44,12 @@
 .checkbox__link {
     color: $accent-blue-color;
     text-decoration: underline;
-    margin-left: 5px;
     font-size: 14px;
     line-height: 1.71;
     cursor: pointer;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.17;
+    } 
 }

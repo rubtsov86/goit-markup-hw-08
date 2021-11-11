@@ -1,4 +1,12 @@
 .backdrop--visible {
+    overflow-y: scroll;
+
+    @media screen and (max-width: 1199px) {
+        padding: 93px 15px;
+
+
+    }
+
     position: fixed;
     top: 0;
     left: 0;
@@ -18,19 +26,45 @@
 
 .modal {
 
+
+
     .backdrop--visible & {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+        padding: 40px;
 
-    width: 528px;
-    height: 581px;
-    padding: 40px;
 
-    background-color: $accent-white-color;
-    border-radius: 4px;
-    transition: transform $timer-animation-duration $timer-cubic-function;
+        background-color: $accent-white-color;
+        border-radius: 4px;
+        transition: transform $timer-animation-duration $timer-cubic-function;
+
+        @media screen and (max-width: 767px) {
+            position: relative;
+            max-width: 450px;
+            height: 609px;
+            margin: 0 auto;
+        }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        position: relative;
+        max-width: 450px;
+        height: 609px;
+        margin: 0 auto;
+    }
+    
+    @media screen and (min-width: 1200px) {    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+
+        width: 528px;
+        height: 581px;
+ 
+    }
+
+
+    
+
+
 }
 
     .backdrop--hidden & {
@@ -43,6 +77,7 @@
     margin-top: 0;
     margin-bottom: 12px;
     align-self: center;
+    text-align: center;
     font-size: 20px;
     line-height: 1.15;
     

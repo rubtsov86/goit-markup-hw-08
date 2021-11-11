@@ -2,11 +2,27 @@
 .select {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+
+
+    @media screen and (max-width: 767px) {   
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: -15px;
+}
 }
 
-.select__item:not(:last-child) {
-    margin-right: 8px;
+.select__item {
+
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+
+    @media screen and (max-width: 767px) {   
+
+    margin-bottom: 15px;
+    }
+
+
 
 }
 

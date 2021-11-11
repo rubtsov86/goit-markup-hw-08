@@ -1,8 +1,80 @@
 .page-header {
-    border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__container {
+  @media screen and (max-width: 767px) {
+    position: relative;
+    height: 60px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-nav__wrapper {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    padding: 48px 40px;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  &.is-open {
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 85px;
+  }
 }
 
 .main-nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.button-menu {
+  background-color: inherit;
+  border: none;
+  margin: 0;
+  padding: 0;
+  z-index: 999;
+  cursor: pointer;
+
+  &:hover {
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.button-menu__icon {
+  transition: color $timer-animation-duration $timer-cubic-function;
+
+  .button-menu:hover & {
+    fill: $accent-blue-color;
+  }
+}
+
+.button-menu.is-open .button-menu__icon--menu {
+  display: none;
+}
+
+.button-menu .button-menu__icon--close {
+  display: none;
+}
+
+.button-menu.is-open .button-menu__icon--close {
+  display: block;
 }
