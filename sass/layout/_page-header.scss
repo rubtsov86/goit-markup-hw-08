@@ -18,10 +18,11 @@
   @media screen and (max-width: 767px) {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -1px;
     display: none;
     padding: 48px 40px;
     width: 100vw;
+    max-width: 483px;
     height: 100vh;
     background-color: #fff;
   }
@@ -32,6 +33,7 @@
       flex-direction: column;
       justify-content: space-between;
       z-index: 2;
+      margin: 0 auto;
     }
   }
 
