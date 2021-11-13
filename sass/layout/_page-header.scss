@@ -22,7 +22,7 @@
     display: none;
     padding: 48px 40px;
     width: 100vw;
-    max-width: 483px;
+    max-width: 482px;
     height: 100vh;
     background-color: #fff;
   }
@@ -108,6 +108,9 @@
 
 .site-nav__item:not(:first-child) {
   @media screen and (max-width: 767px) {
+    @media screen and (max-height: 400px) {
+      margin-top: 10px;
+    }
     margin-top: 32px;
   }
 
@@ -170,6 +173,9 @@
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 64px;
+    @media screen and (max-height: 440px) {
+      margin-bottom: 16px;
+    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -216,6 +222,10 @@
     font-size: 34px;
     line-height: 1.17;
     margin-bottom: 32px;
+
+    @media screen and (max-height: 400px) {
+      margin-bottom: 16px;
+    }
   }
 }
 

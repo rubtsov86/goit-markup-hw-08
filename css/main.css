@@ -486,7 +486,7 @@ summary {
     display: none;
     padding: 48px 40px;
     width: 100vw;
-    max-width: 483px;
+    max-width: 482px;
     height: 100vh;
     background-color: #fff;
   }
@@ -597,6 +597,12 @@ summary {
   }
 }
 
+@media screen and (max-width: 767px) and (max-height: 400px) {
+  .site-nav__item:not(:first-child) {
+    margin-top: 10px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .site-nav__item:not(:first-child) {
     margin-left: 50px;
@@ -667,6 +673,12 @@ summary {
   }
 }
 
+@media screen and (max-width: 767px) and (max-height: 440px) {
+  .contact {
+    margin-bottom: 16px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contact {
     display: -webkit-box;
@@ -721,6 +733,12 @@ summary {
     font-size: 34px;
     line-height: 1.17;
     margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) and (max-height: 400px) {
+  .contact__link--big {
+    margin-bottom: 16px;
   }
 }
 
