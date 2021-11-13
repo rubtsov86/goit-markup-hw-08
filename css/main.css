@@ -487,7 +487,6 @@ summary {
     padding: 48px 40px;
     width: 100vw;
     height: 100vh;
-    overflow-y: scroll;
     background-color: #fff;
   }
 }
@@ -655,7 +654,6 @@ summary {
 /*contact*/
 @media screen and (max-width: 767px) {
   .contact {
-    /*margin-top: 306px;*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -663,6 +661,7 @@ summary {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    margin-bottom: 64px;
   }
 }
 
@@ -727,7 +726,6 @@ summary {
   .contact__link--small {
     font-size: 24px;
     line-height: 1.17;
-    margin-bottom: 64px;
   }
 }
 
@@ -776,6 +774,8 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
