@@ -18,11 +18,11 @@
   @media screen and (max-width: 767px) {
     position: absolute;
     top: 0;
-    left: -1px;
+    left: -2px;
     display: none;
     padding: 48px 40px;
     width: 100vw;
-    max-width: 482px;
+    max-width: 483px;
     height: 100vh;
     background-color: #fff;
   }
@@ -111,6 +111,9 @@
     @media screen and (max-height: 400px) {
       margin-top: 10px;
     }
+    @media screen and (max-height: 380px) {
+      margin-top: 0px;
+    }
     margin-top: 32px;
   }
 
@@ -173,8 +176,11 @@
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 64px;
-    @media screen and (max-height: 440px) {
+    @media screen and (max-height: 400px) {
       margin-bottom: 16px;
+    }
+    @media screen and (max-height: 380px) {
+      margin-bottom: 10px;
     }
   }
 
@@ -225,6 +231,9 @@
 
     @media screen and (max-height: 400px) {
       margin-bottom: 16px;
+    }
+    @media screen and (max-height: 380px) {
+      margin-bottom: 0px;
     }
   }
 }
