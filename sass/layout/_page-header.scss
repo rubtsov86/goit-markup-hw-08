@@ -1,7 +1,5 @@
 .page-header {
-  @media screen and (min-width: 768px) {
-    border-bottom: 1px solid #ececec;
-  }
+  border-bottom: 1px solid #ececec;
 }
 
 .page-header__container {
@@ -23,13 +21,17 @@
     left: 0;
     display: none;
     padding: 48px 40px;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
     background-color: #fff;
   }
 
   &.is-open {
     @media screen and (max-width: 767px) {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       z-index: 2;
     }
   }
@@ -40,6 +42,11 @@
     justify-content: space-between;
     width: 70%;
     margin-left: 85px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    width: 90%;
   }
 }
 
@@ -159,7 +166,7 @@
 
 .contact {
   @media screen and (max-width: 767px) {
-    margin-top: 306px;
+    /*margin-top: 306px;*/
     display: flex;
     flex-direction: column-reverse;
   }

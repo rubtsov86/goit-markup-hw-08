@@ -289,6 +289,10 @@ summary {
   letter-spacing: 0.03em;
 }
 
+.body.is-open {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 1199px) {
   .section {
     padding-top: 60px;
@@ -311,6 +315,13 @@ summary {
   text-align: center;
 }
 
+@media screen and (max-width: 1199px) {
+  .section__title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+
 .section--top-padding {
   padding-top: 0;
 }
@@ -322,7 +333,7 @@ summary {
 }
 
 .section--background {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 
 .container {
@@ -443,10 +454,8 @@ summary {
 }
 
 /*   layout  */
-@media screen and (min-width: 768px) {
-  .page-header {
-    border-bottom: 1px solid #ececec;
-  }
+.page-header {
+  border-bottom: 1px solid #ececec;
 }
 
 .page-header__container {
@@ -476,14 +485,25 @@ summary {
     left: 0;
     display: none;
     padding: 48px 40px;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
     background-color: #fff;
   }
 }
 
 @media screen and (max-width: 767px) {
   .site-nav__wrapper.is-open {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     z-index: 2;
   }
 }
@@ -501,6 +521,13 @@ summary {
             justify-content: space-between;
     width: 70%;
     margin-left: 85px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav__wrapper {
+    margin-left: 93px;
+    width: 90%;
   }
 }
 
@@ -628,7 +655,7 @@ summary {
 /*contact*/
 @media screen and (max-width: 767px) {
   .contact {
-    margin-top: 306px;
+    /*margin-top: 306px;*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1070,6 +1097,12 @@ summary {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -1667,12 +1700,29 @@ summary {
 
 /*grid*/
 .grid {
-  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .grid {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid {
+    margin-top: 50px;
+  }
 }
 
 .card {
